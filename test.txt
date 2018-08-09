@@ -1,4 +1,4 @@
 learn git
 now change again
 add a new line
-modify test
+modify test of twice
