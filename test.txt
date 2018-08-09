@@ -2,8 +2,4 @@ learn git
 now change again
 add a new line
 modify test of twice
-<<<<<<< HEAD
-add a new branch is simple
-=======
-add a new branch is simple
->>>>>>> feat
+add new
