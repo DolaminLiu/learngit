@@ -2,5 +2,8 @@ learn git
 now change again
 add a new line
 modify test of twice
-add new this is partner modify
-this is dev content not commit john modified
+<<<<<<< HEAD
+add new by bob
+=======
+add new by bob
+>>>>>>> 673e3708eba91addcbaa019c80323e620aa703fa
