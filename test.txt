@@ -2,5 +2,5 @@ learn git
 now change again
 add a new line
 modify test of twice
-add new
+add new this is partner modify
 this is dev content not commit
