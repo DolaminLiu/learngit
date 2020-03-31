@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p{
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <html>
+    <p class="pp">1</p>
+    <p>2</p>
+    <p id="btn1">3</p>
+    <p id="hh" style="width: 300px;">4</p>
+    <p>5</p>
+  </html>
+    <script>
+      // var divs = document.getElementsByTagName('p')
+      // for(let i=0;i<divs.length;i++){
+      //   (function(i){
+      //     divs[i].onclick = function(){
+      //       console.log(i+1)
+      //     }
+      //   })(i)
+      // }
+
+      // var arr2 = [1,2,2,2,3,4,5,5,5,5]
+      // function many(arr){
+      //   var arr1 = {}
+      //   for(var i=0;i<arr.length;i++){
+      //     var key = arr[i]
+      //     if(!arr1[key]){
+      //       arr1[key] = 1
+      //     }else{
+      //       arr1[key]++
+      //     }
+      //   }
+      //   return arr1
+      // }
+
+      // function mm(arr){
+      //   console.log(arr)
+      //   var max = []
+      //   var num = 0
+      //   for(var i in arr){
+      //     if(arr[i]>num){
+      //       num = arr[i]
+      //       max.splice(0,1,i)
+      //     }else if(arr[i]==num){
+      //       max.push(i)
+      //     }
+      //   }
+      //   console.log(max+'最多出现'+num+'次')
+      // }
+      // //mm(many(arr2))
+      // console.log('abcdefghi'.substr(6))
+      var divs = document.getElementById('hh')
+      function count(){
+        var now = new Date()
+        var target = new Date(2021,0,1)
+        var remain = target - now
+
+        var remainDay = parseInt(remain/1000/60/60/24)
+        var remainHour = parseInt(remain/1000/60/60%24)
+        var remainMuni = parseInt(remain/1000/60%60)
+        var remainSec = parseInt(remain/1000%60)
+
+        divs.innerHTML = remainDay +"天"+remainHour+"小时"+remainMuni+"分钟"+remainSec+"秒"
+      }
+      var arr = [3,7,9,1,5,10];
+
+var temp = 0;
+
+for (var i = 0; i < arr.length; i++){
+
+    for (var j =0; j < arr.length - i; j++){
+
+        if(arr[j] > arr[j + 1]){
+
+            temp= arr[j + 1];
+
+            arr[j +1] = arr[j];
+
+            arr[j]= temp;
+
+        }
+
+    }
+
+}
+
+console.log(arr);
+    </script>
+</body>
+</html>
